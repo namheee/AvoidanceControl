@@ -1,12 +1,25 @@
 # AvoidanceControl
 Attractor avoidance control algorithm
 
-## Usage
+## Quick Start
+```bash
+
+cd AvoidanceControl
+
+docker build -t sa_app .
+
+chmod +x run.sh
+./run.sh
+
+cd .. # move dir /app/
+
+```
 
 
 ## Notes
++ To run the main algorithm, you must first generate the [network_name]_test.pickle. This file encapsulates the network configurations and identified attractors. Please refer to the file from the `example` directory.
 + To generate random Boolean networks, we utilized [BNGenerator](https://github.com/choonlog/OutputStabilization), a software tool that constructs random networks based on biological Boolean logics extracted from the Cell Collective (https://cellcollective.org/).
-+ To identify all attractors of Boolean networks, we utilized [BooleanSim](https://github.com/jehoons/BooleanSim), a Python 3 tool developed based upon the [booleannet](https://github.com/ialbert/booleannet).
++ To identify all attractors of Boolean networks, we utilized [BooleanSim](https://github.com/jehoons/BooleanSim), a Python 3.0 tool developed based on the [booleannet package](https://github.com/ialbert/booleannet).
 
 
 ## Comparison with other algorithms
