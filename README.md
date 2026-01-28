@@ -49,3 +49,4 @@ biobalm.SuccessionDiagram.from_rules and biobalm.control.succession_control()
 
 ## Reference paper
 + A related paper is expected to be published soon.
++ Supplementary_Material consists of detailed information supporting the main findings of the study.
